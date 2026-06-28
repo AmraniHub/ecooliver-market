@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────
-// Ecooliver — Google Apps Script Webhook
+// Ecoolivier — Google Apps Script Webhook
 // Google Sheets + Telegram Bot Notification
 // ─────────────────────────────────────────────────────────────
 // SETUP:
@@ -65,7 +65,7 @@ function sendTelegram(data, time) {
   if (!TELEGRAM_BOT_TOKEN || TELEGRAM_BOT_TOKEN === 'YOUR_BOT_TOKEN_HERE') return;
 
   const msg = [
-    '🌿 *طلب جديد — Ecooliver*',
+    '🌿 *طلب جديد — Ecoolivier*',
     '',
     '👤 الاسم: ' + (data.name  || '—'),
     '📱 الهاتف: ' + (data.phone || '—'),
