@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>شكراً — Ecooliver</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --dark:        #071409;
+      --surface:     #0d1f0e;
+      --green-deep:  #1a5c2a;
+      --green-bright:#4caf50;
+      --wheat:       #c8961e;
+      --wheat-light: #f0c040;
+      --text:        #dff0d8;
+      --muted:       #7aaa80;
+      --wa:          #25D366;
+      --grad-green:  linear-gradient(135deg,#1a5c2a 0%,#2d8040 50%,#1a5c2a 100%);
+      --grad-wheat:  linear-gradient(135deg,#c8961e 0%,#f0c040 50%,#c8961e 100%);
+    }
+    html { scroll-behavior:smooth; }
+    body {
+      font-family:'Cairo',sans-serif;
+      background:var(--dark);
+      color:var(--text);
+      min-height:100svh;
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      padding:30px 20px;
+      text-align:center;
+      overflow-x:hidden;
+    }
+
+    /* Wheat grain decoration */
+    .grain-deco {
+      font-size:2.8rem;
+      margin-bottom:20px;
+      animation:float 3s ease-in-out infinite;
+    }
+    @keyframes float { 0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)} }
+
+    .check-circle {
+      width:88px; height:88px; border-radius:50%;
+      background:var(--grad-green);
+      display:flex; align-items:center; justify-content:center;
+      margin:0 auto 28px;
+      box-shadow:0 0 40px rgba(76,175,80,.35);
+      animation:pop .5s cubic-bezier(.175,.885,.32,1.275);
+    }
+    @keyframes pop { from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1} }
+    .check-circle svg { width:42px; height:42px; stroke:#fff; fill:none; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; }
+
+    h1 { font-size:clamp(1.7rem,5vw,2.4rem); font-weight:900; color:#fff; margin-bottom:10px; line-height:1.25; }
+    h1 .wheat { color:var(--wheat-light); }
+    .sub {
+      font-size:1rem; color:var(--muted); max-width:420px; margin:0 auto 36px; line-height:1.85;
+    }
+
+    .info-box {
+      background:rgba(26,92,42,.18); border:1px solid rgba(76,175,80,.25);
+      border-radius:16px; padding:24px 28px; max-width:400px; margin:0 auto 36px;
+    }
+    .info-box p { font-size:.9rem; color:var(--text); line-height:1.8; }
+    .info-box strong { color:var(--green-bright); }
+
+    .actions { display:flex; flex-wrap:wrap; gap:14px; justify-content:center; }
+    .btn-wa {
+      display:inline-flex; align-items:center; gap:8px;
+      background:var(--wa); color:#fff; text-decoration:none;
+      border-radius:50px; padding:14px 26px;
+      font-family:'Cairo',sans-serif; font-size:1rem; font-weight:900;
+      box-shadow:0 4px 20px rgba(37,211,102,.4);
+      transition:opacity .2s,transform .15s;
+    }
+    .btn-wa:hover { opacity:.88; transform:translateY(-1px); }
+    .btn-back {
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(76,175,80,.12); border:1.5px solid rgba(76,175,80,.3);
+      color:var(--text); text-decoration:none;
+      border-radius:50px; padding:14px 26px;
+      font-family:'Cairo',sans-serif; font-size:1rem; font-weight:700;
+      transition:opacity .2s;
+    }
+    .btn-back:hover { opacity:.75; }
+    .btn-wa svg { width:20px; height:20px; fill:#fff; flex-shrink:0; }
+
+    .wheat-row { font-size:1.6rem; margin-top:40px; opacity:.35; letter-spacing:8px; }
+    .footer-note { font-size:.76rem; color:var(--muted); margin-top:18px; }
+    .footer-note a { color:var(--wheat); text-decoration:none; }
+  </style>
+</head>
+<body>
+
+  <div class="grain-deco">🌾</div>
+
+  <div class="check-circle">
+    <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+  </div>
+
+  <h1>طلبك <span class="wheat">وصلنا</span> بنجاح! 💧</h1>
+  <p class="sub">
+    شكراً على طلبك — الفريق ديال Ecooliver سيتواصل معك على واتساب خلال أقل من ساعات لتأكيد الطلب والتوصيل.
+  </p>
+
+  <div class="info-box">
+    <p>
+      ✅ <strong>الخطوة التالية:</strong> منتظر مكالمة أو رسالة واتساب منا لتأكيد العنوان وتحديد موعد التوصيل.<br><br>
+      📦 <strong>التوصيل:</strong> لجميع أنحاء المغرب — الدفع عند الاستلام.<br><br>
+      ⏱️ <strong>وقت الرد:</strong> خلال ساعات من تسليم الطلب.
+    </p>
+  </div>
+
+  <div class="actions">
+    <a class="btn-wa"
+       href="https://wa.me/212XXXXXXXXX?text=السلام%20عليكم%2C%20طلبت%20رشاش%20Ecooliver%20وبغيت%20نأكد%20الطلب%20💧"
+       target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.373l-.36-.214-3.732.978.995-3.643-.235-.374A9.817 9.817 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+      تأكيد عبر واتساب
+    </a>
+    <a class="btn-back" href="/">← العودة للموقع</a>
+  </div>
+
+  <div class="wheat-row">🌾 🌿 🌾 🌿 🌾</div>
+  <p class="footer-note">© 2026 Ecooliver · موقع بـ <a href="https://amraniads.com" target="_blank">AmraniAds</a></p>
+
+</body>
+</html>
